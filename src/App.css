@@ -7,16 +7,12 @@ html {
 }
 
 .landing-center {
+  height: 50vh;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-
-.hero {
-  /* margin: auto; */
-
+  justify-content: flex-end;
 }
 
 .searchbar {
@@ -24,10 +20,12 @@ html {
   height: 44px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: transparent;
   border: 1px solid #5f6368;
   border-radius: 24px;
   max-width: 584px;
+  margin-top: 1.5%;
 }
 
 .searchbar:hover, .searchbar:focus {
@@ -37,7 +35,7 @@ html {
 }
 
 .search {
-  height: 34px;
+  margin-right: auto;
   background: transparent;
   font-size: 16px;
   color: white;
@@ -50,7 +48,16 @@ html {
 }
 
 .glass{
-  padding-right: 13px;
+  padding-left: 8px;
+  margin: none;
+  display: flex;
+  justify-content: center;
+  color: #9aa0a6;
+}
+
+.glass svg {
+  height: 20px;
+  width: 20px;
 }
 
 .mic-box {
@@ -63,4 +70,24 @@ html {
 .mic {
  width: 15px;
  height: 21px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  /* width: 14.5%; */
+  margin-top: 20px;
+}
+
+.button-container button {
+  height: 36px;
+  background-color: #303134;
+  color: white;
+  border-radius: 4px;
+  border: 1px solid #303134;
+  margin: 11px 6px 11px 6px;
+}
+
+.button-container button:hover {
+  border: 1px solid #5f6368;
 }
